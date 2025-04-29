@@ -19,4 +19,8 @@ public class Tarea {
         return prioridad;
     }
 
+    public void setPrioridad(int prioridad){
+        this.prioridad = prioridad;
+    }
+
 }
