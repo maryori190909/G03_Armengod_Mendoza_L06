@@ -14,6 +14,6 @@ public class Node <T>{
         this.data = data;
     }
 
-    public
+    public 
 
 }

@@ -23,4 +23,9 @@ public class Tarea {
         this.prioridad = prioridad;
     }
 
+    @Override
+    public void toString(){
+        
+    }
+
 }
