@@ -24,8 +24,8 @@ public class Tarea {
     }
 
     @Override
-    public void toString(){
-        
+    public String toString(){
+        return "tarea: " + " titulo:"+ titulo + ", prioridad:  "+ prioridad;
     }
 
-}
+    }
