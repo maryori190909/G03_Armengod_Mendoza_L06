@@ -94,7 +94,13 @@ public class Gestordetareas <T> {
     }
     public static <T> Node<T> insertaralfinal(Node<T> head, T valor){
         Node<T> nuevo = new Node<>(valor);
-        
+        if (head == null){
+            return nuevo;
+        }
+        Node<T> actual = head;
+        while (actual.getNext()!= null){
+            
+        }
     }
 
 }
