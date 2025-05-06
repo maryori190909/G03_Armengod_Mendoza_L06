@@ -125,4 +125,11 @@ public class Gestordetareas <T> {
         return a == null && b == null;
     }
 
+    public static <T> Node<T> concatenarlistas(Node<T> a, Node<T> b){
+        if(a== null){
+            return b;
+        }
+        
+    }
+
 }
