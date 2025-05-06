@@ -54,5 +54,10 @@ public class Gestordetareas <T> {
             actual = actual.getNext();
         }
     }
-    
+    public void invertirTarea(){
+        Node<T> anterior = null;
+        Node<T> actual = cabeza;
+        Node<T> siguiente;
+        
+    }
 }
