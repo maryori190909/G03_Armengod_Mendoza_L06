@@ -20,6 +20,12 @@ public class Gestordetareas <T> {
     }
 
     public boolean eliminarTarea(T tarea){
+        if (cabeza == null) {
+            return false;}
+        if(cabeza.getData().equals(tarea)){
+            cabeza = cabeza.getNext();
+            return true;
+        }
 
     }
 
