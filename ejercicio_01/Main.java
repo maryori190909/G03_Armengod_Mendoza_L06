@@ -1,3 +1,4 @@
+
 public class Main {
     public static void main(String[] args) {
         Gestordetareas <Tarea> gestor = new Gestordetareas<>();
@@ -26,6 +27,11 @@ public class Main {
         System.out.println(" Tareas actuales: ");
         gestor.imprimirTarea();
         gestor.impimirTareasCompletas();
+
+        List<String> lista = Array.asList("perro ", " gato", "pericote");
+        boolean encontrado = Gestordetareas.buscarelemento(lista, " gato");
+        System.out.println("esta gato en la lista?"+ encontrado);
+
 
     }
 
