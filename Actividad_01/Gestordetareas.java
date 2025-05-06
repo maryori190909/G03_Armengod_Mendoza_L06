@@ -1,8 +1,11 @@
+import java.util.*;
 public class Gestordetareas <T> {
     private Node <T> cabeza;
+    private List<T> tareascompletas;
 
     public Gestordetareas(){
         this.cabeza = null;
+        this.tareascompletas = new ArrayList<>();
     }
 
     public void agregarTarea(T tarea){
@@ -73,4 +76,5 @@ public class Gestordetareas <T> {
         }
         return false;
     }
+
 }
