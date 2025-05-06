@@ -6,7 +6,11 @@ public class Main {
         Tarea t2 = new Tarea(" presentar reporte", 3);
         Tarea t3 = new Tarea("revisar codigo ", 2);
 
-        
+        gestor.agregarTarea(t1);
+        gestor.agregarTarea(t2);
+        gestor.agregarTarea(t3);
+
+        gestor.eliminarTarea(t3)
     }
 
 }
