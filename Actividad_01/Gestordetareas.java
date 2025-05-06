@@ -38,6 +38,12 @@ public class Gestordetareas <T> {
     }
     public boolean contieneTarea(T tarea){
         Node<T> actual = cabeza;
-        
+        while(actual != null){
+            if(actual.getData().equals(tarea)){
+                return true;
+            }
+            actual = actual.getNext();
+        }
+        return false;
     }
 }
