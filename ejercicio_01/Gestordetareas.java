@@ -83,4 +83,8 @@ public class Gestordetareas <T> {
         }
     }
 
+    public static <T> boolean buscarelemento(List<T> lista, T valor){
+        
+    }
+
 }
