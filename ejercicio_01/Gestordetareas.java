@@ -104,6 +104,9 @@ public class Gestordetareas <T> {
         actual.setNext(nuevo);
         return head;
     }
-    
+    public static <T> int ContarNodos (Node<T> head){
+        int cont = 0;
+        Node<T> actual = head;
+    }
 
 }
