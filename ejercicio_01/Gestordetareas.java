@@ -88,8 +88,10 @@ public class Gestordetareas <T> {
     }
 
     public static <T> List<T> invertirlista(List<T> lista){
-        Node<T> nuevo = new ArrayList<>(lista);
-        
+        List <T> invertida = new ArrayList<>(lista);
+        Collections.reverse(invertida);
+        return invertida;
     }
+    
 
 }
