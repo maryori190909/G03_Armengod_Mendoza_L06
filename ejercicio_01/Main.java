@@ -1,4 +1,4 @@
-
+import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Gestordetareas <Tarea> gestor = new Gestordetareas<>();
@@ -28,9 +28,16 @@ public class Main {
         gestor.imprimirTarea();
         gestor.impimirTareasCompletas();
 
-        List<String> lista = Array.asList("perro ", " gato", "pericote");
+        List<String> lista = Arrays.asList("perro ", " gato", "pericote");
         boolean encontrado = Gestordetareas.buscarelemento(lista, " gato");
         System.out.println("esta gato en la lista?"+ encontrado);
+
+        List<String> listaInvertida = Gestordetareas.invertirlista(lista);
+        System.out.println(" Lista invertidad: "+ listaInvertida);
+
+        Node<Integer> head = new Node<>(1);
+        head = Gestordetareas.insertaralfinal(head, 8);
+        head = Gestordetareas.insertaralfinal(head,9);
 
 
     }
