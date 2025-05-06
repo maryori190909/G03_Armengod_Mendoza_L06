@@ -29,7 +29,11 @@ public class Gestordetareas <T> {
         Node<T> actual = cabeza;
         while(actual.getNext()!= null && !actual.getNext().getData().equals(tarea) ){
             actual = actual.getNext();
-        }
+            if(actual.getNext()== null){
+                return false;
+            }
+            actual.setNext(actual.getNext().getNext());
+            return true;
 
     }
 
