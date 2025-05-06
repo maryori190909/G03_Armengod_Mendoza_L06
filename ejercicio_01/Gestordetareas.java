@@ -87,6 +87,9 @@ public class Gestordetareas <T> {
         return lista.contains(valor);
     }
 
-    public static <T>
+    public static <T> List<T> invertirlista(List<T> lista){
+        Node<T> nuevo = new ArrayList<>(lista);
+        
+    }
 
 }
