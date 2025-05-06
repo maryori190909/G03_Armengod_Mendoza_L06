@@ -15,8 +15,12 @@ public class Gestordetareas <T> {
             while (actual.getNext() != null){
                 actual = actual.getNext();
             }
-            
+            actual.setNext(nuevo);
         }
+    }
+
+    public boolean eliminarTarea(T tarea){
+
     }
 
 }
