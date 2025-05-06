@@ -10,7 +10,19 @@ public class Main {
         gestor.agregarTarea(t2);
         gestor.agregarTarea(t3);
 
-        gestor.eliminarTarea(t3)
+        gestor.eliminarTarea(t3);
+
+        System.out.println(" tareas actuales: ");
+        gestor.imprimirTarea();
+
+        System.out.println(" esta el envio de informe? "+ gestor.contieneTarea(t1));
+
+        gestor.invertirTarea();
+        System.out.println(" tareas invertidad: ");
+        gestor.imprimirTarea();
+
+        
+
     }
 
 }
