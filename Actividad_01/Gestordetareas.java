@@ -69,12 +69,18 @@ public class Gestordetareas <T> {
         }
         cabeza = anterior;
     }
-    public boolean transferiratareascompletas(){
+    public boolean transferiratareascompletas( T tarea){
         if(eliminarTarea(tarea)){
             tareascompletas.add(tarea);
             return true;
         }
         return false;
+    }
+    public void impimirTareasCompletas(){
+        System.out.println(" Tareas completas: ");
+        for(T tarea : tareascompletas){
+            System.out.println(tarea);
+        }
     }
 
 }
