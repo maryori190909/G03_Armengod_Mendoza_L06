@@ -117,7 +117,7 @@ public class Gestordetareas <T> {
     public static<T> boolean soniguales (Node<T> a, Node<T> b){
         while(a!= null && b!= null){
             if (!a.getData().equals(b.getData())){
-                return false
+                return false;
             }
             a = a.getNext();
             b = b.getNext();

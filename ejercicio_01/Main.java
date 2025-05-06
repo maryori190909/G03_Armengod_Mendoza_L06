@@ -56,9 +56,16 @@ public class Main {
         boolean igual = Gestordetareas.soniguales(head, otralis);
         System.out.println("las listas son iguales? " + igual);
 
-        
-
-
+        Node<Integer> listab = new Node<>(4);
+        listab = Gestordetareas.insertaralfinal(listab, 6);
+        Node <Integer> concatenada = Gestordetareas.concatenarlistas(head, listab);
+        System.out.println("lista concatenada: ");
+        actual = concatenada;
+        while (actual != null){
+            System.out.println(actual.getData()+ "= ");
+            actual = actual.getNext();
+        }
+        System.out.println("valor null");
     }
 
 }
