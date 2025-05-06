@@ -58,6 +58,12 @@ public class Gestordetareas <T> {
         Node<T> anterior = null;
         Node<T> actual = cabeza;
         Node<T> siguiente;
-        
+        while (actual != null){
+            siguiente = actual.getNext();
+            actual.setNext(anterior);
+            anterior = actual;
+            actual = siguiente;
+        }
+        cabeza = anterior;
     }
 }
