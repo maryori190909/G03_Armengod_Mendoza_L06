@@ -107,6 +107,11 @@ public class Gestordetareas <T> {
     public static <T> int ContarNodos (Node<T> head){
         int cont = 0;
         Node<T> actual = head;
+        while(actual!= null){
+            cont++;
+            actual = actual.getNext();
+        }
+        return cont;
     }
 
 }
