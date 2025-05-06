@@ -129,7 +129,12 @@ public class Gestordetareas <T> {
         if(a== null){
             return b;
         }
-        
+        Node<T> actual = a;
+        while (actual.getNext()!= null){
+            actual = actual.getNext();
+        }
+        actual.setNext(b);
+        return a;
     }
 
 }
