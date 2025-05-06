@@ -46,4 +46,9 @@ public class Gestordetareas <T> {
         }
         return false;
     }
+
+    public void imprimirTarea(){
+        Node<T> actual = cabeza;
+        
+    }
 }
