@@ -10,6 +10,13 @@ public class Gestordetareas <T> {
         if(cabeza == null){
             cabeza = nuevo;
         }
+        else{
+            Node<T> actual = cabeza;
+            while (actual.getNext() != null){
+                actual = actual.getNext();
+            }
+            
+        }
     }
 
 }
