@@ -114,4 +114,10 @@ public class Gestordetareas <T> {
         return cont;
     }
 
+    public static<T> boolean soniguales (Node<T> a, Node<T> b){
+        while(a!= null && b!= null){
+            
+        }
+    }
+
 }
