@@ -49,6 +49,10 @@ public class Gestordetareas <T> {
 
     public void imprimirTarea(){
         Node<T> actual = cabeza;
-        
+        while(actual != null){
+            System.out.println(actual.getData());
+            actual = actual.getNext();
+        }
     }
+    
 }
