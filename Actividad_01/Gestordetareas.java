@@ -66,4 +66,11 @@ public class Gestordetareas <T> {
         }
         cabeza = anterior;
     }
+    public boolean transferiratareascompletas(){
+        if(eliminarTarea(tarea)){
+            tareascompletas.add(tarea);
+            return true;
+        }
+        return false;
+    }
 }
