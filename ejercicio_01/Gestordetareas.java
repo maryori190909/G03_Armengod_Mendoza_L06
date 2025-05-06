@@ -84,7 +84,9 @@ public class Gestordetareas <T> {
     }
 
     public static <T> boolean buscarelemento(List<T> lista, T valor){
-        
+        return lista.contains(valor);
     }
+
+    public static <T>
 
 }
