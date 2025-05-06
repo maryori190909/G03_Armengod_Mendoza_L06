@@ -99,8 +99,11 @@ public class Gestordetareas <T> {
         }
         Node<T> actual = head;
         while (actual.getNext()!= null){
-            
+            actual = actual.getNext();
         }
+        actual.setNext(nuevo);
+        return head;
     }
+    
 
 }
