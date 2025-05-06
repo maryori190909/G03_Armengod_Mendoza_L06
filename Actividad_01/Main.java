@@ -18,10 +18,14 @@ public class Main {
         System.out.println(" esta el envio de informe? "+ gestor.contieneTarea(t1));
 
         gestor.invertirTarea();
-        System.out.println(" tareas invertidad: ");
+        System.out.println(" tareas invertidas: ");
         gestor.imprimirTarea();
 
-        
+        gestor.transferiratareascompletas(t2);
+
+        System.out.println(" Tareas actuales: ");
+        gestor.imprimirTarea();
+        gestor.impimirTareasCompletas();
 
     }
 
