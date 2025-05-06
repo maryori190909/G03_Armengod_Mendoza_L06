@@ -92,6 +92,9 @@ public class Gestordetareas <T> {
         Collections.reverse(invertida);
         return invertida;
     }
-    
+    public static <T> Node<T> insertaralfinal(Node<T> head, T valor){
+        Node<T> nuevo = new Node<>(valor);
+        
+    }
 
 }
